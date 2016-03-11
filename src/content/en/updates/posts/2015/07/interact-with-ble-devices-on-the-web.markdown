@@ -4,7 +4,7 @@ title: "Interact with BLE devices on the Web"
 description: "A Web API has been added to Chrome that makes it possible for websites to discover and communicate with devices over the Bluetooth 4 wireless standard using GATT."
 featured_image: /web/updates/images/2015-07-22-interact-with-ble-devices-on-the-web/featured.png
 published_on: 2015-07-22
-updated_on: 2015-12-04
+updated_on: 2016-02-26
 authors:
   - beaufortfrancois
 tags:
@@ -33,7 +33,7 @@ specification](https://webbluetoothcg.github.io/web-bluetooth/) is not
 finalized yet, the Chrome Team is actively looking for enthusiastic developers
 (I mean you) to try out this work-in-progress API and give
 [feedback on the spec](https://github.com/WebBluetoothCG/web-bluetooth/issues) and
-[feedback on the implementation](https://code.google.com/p/chromium/issues/entry?labels=Cr-Blink-Bluetooth).
+[feedback on the implementation](https://bugs.chromium.org/p/chromium/issues/entry?components=Blink%3EBluetooth).
 
 Web Bluetooth API is at the time of writing partially implemented in Chrome OS
 and Chrome Dev for Android behind an experimental flag. Go to
@@ -175,9 +175,10 @@ navigator.bluetooth.requestDevice({ filters: [{ services: ['battery_service'] }]
   // Reading Battery Level...
   return characteristic.readValue();
 })
-.then(buffer => {
-  var data = new DataView(buffer);
-  console.log('Battery percentage is ' + data.getUint8(0));
+.then(value => {
+  // In Chrome 50+, a DataView is returned instead of an ArrayBuffer.
+  value = value.buffer ? value : new DataView(value);
+  console.log('Battery percentage is ' + value.getUint8(0));
 })
 .catch(error => { console.log(error); });
 {% endhighlight %}

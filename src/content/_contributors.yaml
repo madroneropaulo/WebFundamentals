@@ -81,11 +81,13 @@ ericbidelman:
     unit: Developer Relations
   country: USA
   homepage: http://ericbidelman.com
-  google: 118075919496626375791
+  google: +EricBidelman
   twitter: ebidel
   role:
     - author
   email: e.bidelman@google.com
+  description:
+    en: "Engineer @ Google working on Polymer, Chrome, and the web"
 
 yatesbuckley:
   name:
@@ -186,7 +188,7 @@ robdodson:
   country: USA
   role:
     - author
-  homepage: http://robdodson.me
+  homepage: https://robdodson.me
   google: 118271135596408598424
   twitter: rob_dodson
   email: robdodson@google.com
@@ -222,6 +224,19 @@ samdutton:
   email: dutton@google.com
   description:
     en: "Sam is a Developer Advocate"
+
+jonathangarbee:
+  name:
+    given: Jonathan
+    family: Garbee
+  org:
+    name: Individual
+  country: USA
+  email: jonathan.garbee@gmail.com
+  role:
+    - author
+  description:
+    en: "Google Developer Expert for Web Technology"
 
 dgash:
   name:
@@ -396,8 +411,8 @@ jeokrang:
     given: Hunmin
     family: Kim
   org:
-    name: NHN Technology Services
-    unit: Front-End Development Team
+    name: NAVER Corp.
+    unit: Blog & Post Development lab
   country: Korea
   role:
     - translator
@@ -406,7 +421,7 @@ jeokrang:
   twitter:
   email: jeokrang@gmail.com
   description:
-    en: "Hunmin is a Web Front-End Developer"
+    en: "Hunmin is a JavaScript Developer"
 
 greenido:
   name:
@@ -425,6 +440,23 @@ greenido:
   email: idog@google.com
   description:
     en: "Ido is a Developer Advocate and a runner"
+
+eligrey:
+  name:
+    given: Eli
+    family: Grey
+  org:
+    name: "ΩF:∅"
+  country: USA
+  role:
+    - author
+    - engineer
+  homepage: https://eligrey.com
+  google: 111217788892362755679
+  twitter: sephr
+  email: me@eligrey.com
+  description:
+    en: "Eli is a Developer"
 
 nurinamu:
   name:
@@ -840,7 +872,7 @@ kaycebasques:
   role:
     - author
   description:
-    en: "Kayce is a Tech Writer"
+    en: "Technical Writer at Google"
 
 fouadvaladbeigi:
   name:

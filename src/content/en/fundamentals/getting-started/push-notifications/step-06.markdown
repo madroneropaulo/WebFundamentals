@@ -1,13 +1,13 @@
 ---
 layout: shared/narrow
 title: "Subscribe to Push Notifications"
-description: "Add code to your web app's Service Worker to subscribe to Push Notifications"
+description: "Add code to your web app's service worker to subscribe to push notifications"
 notes:
   styling:
     - Styling will come later
 published_on: 2015-09-28
 updated_on: 2015-09-28
-translation_priority: 0
+translation_priority: 1
 order: 6
 authors:
   - samdutton

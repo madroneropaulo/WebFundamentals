@@ -1,6 +1,6 @@
 ---
 layout: updates/post
-title: "Detecting if a web app is launched from the home screen"
+title: "Detecting if a Web App is Launched from the Home Screen"
 published_on: 2015-10-16
 updated_on: 2015-10-16
 authors:
@@ -14,13 +14,13 @@ description: "Detecting if a web app is launched from the home screen"
 
 During the past year we have focused on enabling users to build app like 
 experiences on the web by making it possible for apps to work offline using 
-[Service Worker](/web/fundamentals/primers/service-workers) and to get a 
-presence on the homescreen using the 
+[service worker](/web/fundamentals/primers/service-workers) and to get a 
+presence on the home screen using the 
 [Web App Manifest](/web/fundamentals/engage-and-retain/simplified-app-installs).
 
 Now apps tend to offer different experiences as sites, and developers might want to
 offer different experiences depending on whether the site is viewed in the browser
-or launched as a standalone web app, from the homescreen.
+or launched as a standalone web app, from the home screen.
 
 One example could be to show a navigation drawer only when launched as an app
 (ie. without any browser chrome).
@@ -53,7 +53,7 @@ is being used for displaying the app, ie. is it being displayed by a `browser`,
 apps, which will mean that `(display-mode: standalone)` is `true`.
 
 To apply a different background color for the app above when being launched
-from the homescreen, all we need to do it use the following conditional CSS:
+from the home screen, all we need to do it use the following conditional CSS:
 
 {% highlight javascript %}
 @media all and (display-mode: standalone) {
@@ -84,11 +84,11 @@ engagement with Web App install banners".
 
 It is also recommended to not add back-buttons which are visible in the standard
 Chrome UI. If a back-button is needed, the `"display": "browser"` mode can be used
-in the Web App Manifest instead.
+in the web app manifest instead.
 
 ###FAQ
 * Will this work on Chrome for iOS or on Desktop?
-  * This feature works on any platform where web apps can be added to the homescreen,
+  * This feature works on any platform where web apps can be added to the home screen,
     meaning it works for Android as well as for desktop "Add to desktop" apps. It
     additional works for Chrome Apps distributed through the Chrome store. It currently
     does not work on iOS.

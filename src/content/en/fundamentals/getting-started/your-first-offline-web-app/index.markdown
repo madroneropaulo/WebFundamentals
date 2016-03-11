@@ -5,6 +5,7 @@ description: "Service workers are background scripts that open the door to rich 
 published_on: 2015-09-30
 updated_on: 2015-10-06
 translation_priority: 1
+order: 3
 ---
 In this codelab, you’ll learn how to integrate a service worker into an existing application to make it work offline.
 
@@ -29,8 +30,8 @@ experience is.
 
 ### What you'll learn
 
-* How to add a basic Service Worker to an existing project.
-* A brief overview of the Service Worker Lifecycle
+* How to add a basic service worker to an existing project.
+* A brief overview of the service worker Lifecycle
 * A simple offline caching strategy
 
 ### What you'll need

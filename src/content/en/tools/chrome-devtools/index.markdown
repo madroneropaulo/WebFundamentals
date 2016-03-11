@@ -24,16 +24,13 @@ translation_priority: 1
         <ul>
           <li>Select <strong>More Tools &gt; Developer Tools</strong> from the Chrome Menu.</li>
           <li>Right-click on a page element and select Inspect</li>
-          <li>Use <kbd>Ctrl/Cmd</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (<a href="/web/tools/chrome-devtools/iterate/inspect-styles/shortcuts">more shortcuts</a>)</li>
+          <li>
+            Use <a href="/web/tools/chrome-devtools/iterate/inspect-styles/shortcuts">shortcuts</a>
+            <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (Windows)
+            or <kbd>Cmd</kbd>+<kbd>Opt</kbd>+<kbd>I</kbd> (Mac)
+          </li>
         </ul>
       </div>
-    </div>
-  </div>
-
-  <div class="wf-devtools-announcement">
-    <div class="page-content">
-      <h3>Rewatch the future of mobile-first authoring in DevTools.</h3>
-      {% ytvideo dJR-n8szgBc %}
     </div>
   </div>
 
@@ -53,6 +50,7 @@ translation_priority: 1
           <a href="#timeline" class="mdl-tabs__tab">Timeline</a>
           <a href="#profiles" class="mdl-tabs__tab">Profiles</a>
           <a href="#resources" class="mdl-tabs__tab">Resources</a>
+          <a href="#security" class="mdl-tabs__tab">Security</a>
           <a href="#devicemode" class="mdl-tabs__tab wf-devtools-tabdivider">Device Mode</a>
           <a href="#remotedebugging" class="mdl-tabs__tab">Remote Debugging</a>
           <a href="#settings" class="mdl-tabs__tab">Settings</a>
@@ -82,9 +80,8 @@ translation_priority: 1
         <p>Use the Device Mode to build fully responsive, mobile-first web experiences.</p>
         <ul>
           <li><a href="/web/tools/chrome-devtools/iterate/device-mode/">Device Mode</a></li>
-          <li><a href="/web/tools/chrome-devtools/iterate/device-mode/emulate-mobile-viewports">Emulate Mobile Viewports</a></li>
-          <li><a href="/web/tools/chrome-devtools/iterate/device-mode/device-input-and-sensors">Emulate Device Input and Sensors</a></li>
-          <li><a href="/web/tools/chrome-devtools/iterate/device-mode/media-queries">Inspect CSS Media Queries</a></li>
+          <li><a href="/web/tools/chrome-devtools/iterate/device-mode/emulate-mobile-viewports">Test Responsive and Device-specific Viewports</a></li>
+          <li><a href="/web/tools/chrome-devtools/iterate/device-mode/device-input-and-sensors">Emulate Sensors: Geolocation &amp; Accelerometer</a></li>
         </ul>
       </div>
 
@@ -92,7 +89,7 @@ translation_priority: 1
         <img src="{{site.WFBaseUrl}}/tools/chrome-devtools/images/elements.png" alt="Elements Panel">
         <p>Use the Elements panel to iterate on the layout and design of your site by freely manipulating the DOM and CSS.</p>
         <ul>
-          <li><a href="/web/tools/chrome-devtools/iterate/inspect-styles/basics">Inspect and Tweak Your Pages: the Basics</a></li>
+          <li><a href="/web/tools/chrome-devtools/iterate/inspect-styles/">Inspect and Tweak Your Pages</a></li>
           <li><a href="/web/tools/chrome-devtools/iterate/inspect-styles/edit-styles">Edit Styles</a></li>
           <li><a href="/web/tools/chrome-devtools/iterate/inspect-styles/edit-dom">Edit the DOM</a></li>
         </ul>
@@ -122,6 +119,7 @@ translation_priority: 1
         <p>Use the Network panel to get insights into requested and downloaded resources and optimize your page load performance.</p>
         <ul>
           <li><a href="/web/tools/chrome-devtools/profile/network-performance/resource-loading">Network Panel Basics</a></li>
+          <li><a href="/web/tools/chrome-devtools/profile/network-performance/understanding-resource-timing">Understanding Resource Timing</a></li>
           <li><a href="/web/tools/chrome-devtools/profile/network-performance/network-conditions">Network Throttling</a></li>
         </ul>
       </div>
@@ -150,6 +148,14 @@ translation_priority: 1
         <p>Use the Resources panel to inspect all resources that are loaded, including IndexedDB or Web SQL databases, local and session storage, cookies, Application Cache, images, fonts, and stylesheets.</p>
         <ul>
           <li><a href="/web/tools/chrome-devtools/iterate/manage-data/">Manage data</a></li>
+        </ul>
+      </div>
+
+      <div class="mdl-tabs__panel" id="security">
+        <img src="{{site.WFBaseUrl}}/tools/chrome-devtools/images/security.png" alt="Security Panel">
+        <p>Use the Security Panel to debug mixed content issues, problems with your certificate and more.</p>
+        <ul>
+          <li><a href="/web/tools/chrome-devtools/security/">Security</a></li>
         </ul>
       </div>
 
@@ -188,51 +194,51 @@ translation_priority: 1
         <div class="android-card-container mdl-grid">
             <div class="mdl-cell mdl-cell--4-col mdl-card mdl-shadow--3dp">
               <div class="mdl-card__media">
-                <img src="{{site.WFBaseUrl}}/tools/chrome-devtools/images/teaser1.png" alt="Aggregated Details">
+                <img src="{{site.WFBaseUrl}}/tools/chrome-devtools/images/teaser1.png" alt="DevTools Tonight">
               </div>
               <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">Aggregated Details</h4>
+                 <h4 class="mdl-card__title-text">DevTools Tonight</h4>
               </div>
               <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">Find out which third party scripts make your page slow.</span>
+                <span class="mdl-typography--font-light mdl-typography--subhead">Watch our late-night show pilot and learn all about colors.</span>
               </div>
               <div class="mdl-card__actions">
-                 <a class="mdl-button mdl-js-button mdl-typography--text-uppercase" href="/web/updates/2015/08/devtools-digest-aggregated-timeline-details#better-blame-perf-issues-aggregated-details-in-timeline">
-                   Find out now
+                 <a class="mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://www.youtube.com/watch?v=nLpNHNlonMs">
+                   Watch
                  </a>
               </div>
             </div>
 
             <div class="mdl-cell mdl-cell--4-col mdl-card mdl-shadow--3dp">
               <div class="mdl-card__media">
-                <img src="{{site.WFBaseUrl}}/tools/chrome-devtools/images/teaser2.png" alt="Color Palettes">
+                <img src="{{site.WFBaseUrl}}/tools/chrome-devtools/images/teaser2.png" alt="Inspect Devices">
               </div>
               <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">Color Palettes</h4>
+                 <h4 class="mdl-card__title-text">Inspect Devices</h4>
               </div>
               <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">Automatic, Material and custom color palettes in the color picker.</span>
+                <span class="mdl-typography--font-light mdl-typography--subhead">Inspect Devices right within DevTools with our revamped UI.</span>
               </div>
               <div class="mdl-card__actions">
-                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="/web/updates/2015/08/devtools-digest-aggregated-timeline-details#automatic-material-and-custom-color-palettes">
-                   Explore the colors
-                 </a>
-              </div>
-            </div>
-
-            <div class="mdl-cell mdl-cell--4-col mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="{{site.WFBaseUrl}}/tools/chrome-devtools/images/teaser3.png" alt="New main menu">
-              </div>
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">New main menu</h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">Streamlined, easier docking, settings and help access.</span>
-              </div>
-              <div class="mdl-card__actions">
-                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="/web/updates/2015/08/devtools-digest-aggregated-timeline-details#new-dedicated-main-menu">
+                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="/web/updates/2016/02/devtools-digest-supercharged-remote-debugging">
                    Learn more
+                 </a>
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--4-col mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="{{site.WFBaseUrl}}/tools/chrome-devtools/images/teaser3.png" alt="Class Toggles">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Class Toggles</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">Quickly enable, disable or add new classes to elements.</span>
+              </div>
+              <div class="mdl-card__actions">
+                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="/web/updates/2016/02/devtools-digest-supercharged-remote-debugging">
+                   Start toggling
                  </a>
               </div>
             </div>
@@ -256,6 +262,7 @@ translation_priority: 1
             <li><a href="https://stackoverflow.com/questions/tagged/google-chrome-devtools">StackOverflow</a></li>
             <li><a href="https://plus.google.com/+GoogleChromeDevelopers">Google+</a></li>
             <li><a href="https://www.youtube.com/user/ChromeDevelopers">YouTube</a></li>
+            <li><a href="https://chromiumdev.slack.com/messages/devtools/">Slack</a></li>
           </ul>
         </div>
 

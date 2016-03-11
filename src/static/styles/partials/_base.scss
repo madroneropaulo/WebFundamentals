@@ -75,11 +75,10 @@ img, video {
 
 li {
   line-height: $base-line;
-  margin-bottom: $base-line / 2;
 }
 
 pre {
-  padding: $base-line;
+  padding: $base-line / 2;
 
   overflow-x: auto;
 
@@ -87,6 +86,8 @@ pre {
 }
 
 pre, code {
+  font-size: 10pt;
+  line-height: $base-line;
   word-wrap: normal;
   font-family: 'Roboto Mono', 'Inconsolata', 'monospace';
 }
@@ -201,8 +202,11 @@ blockquote {
 .intro {
   @include typo-subhead-2($usePreferred: false);
   font-weight: normal;
+  letter-spacing: 0;
   margin-bottom: $base-line;
   margin-top: $base-line * 2;
+  padding-bottom: $base-line / 2;
+  border-bottom: 1px solid #eee;
 }
 
 .mdl-cell > .intro {
